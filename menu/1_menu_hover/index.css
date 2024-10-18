@@ -1,0 +1,21 @@
+.menu a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .menu-item{
+    transition: filter .4s ease-out;
+  }
+  
+  .menu:has(.menu-item:hover) .menu-item:not(:hover) { 
+     filter: blur(5px);
+  }
+  
+  .menu{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
